@@ -1,0 +1,61 @@
+body {
+    background-color: black;
+    color: #d9d9d9;
+  }
+
+  .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 7px;
+
+  }
+
+  a {
+      color:#28b39d;
+      text-decoration: none;
+      font-weight: 500;
+  }
+
+  .SearchForm {
+      border-bottom: 1px solid #2f3336;
+      padding-bottom: 7px;
+      padding-left: 7px;
+      
+  }
+
+  #searchBar {
+      height: 23px;
+      border: 3px rgb(0, 0, 184);
+      border-style:double;
+      border-radius: 2px;
+      width: 82%;
+  }
+
+  button {
+      color: #fff;
+      background-color: #145a4f;
+      border-radius: 2px;
+      border: none;
+      padding: 7px 10px;
+  }
+
+  button:hover {
+      background-color: #1a7567;
+  }
+
+  .GifCard {
+      background-color: #16191d;
+      border-bottom: 1px solid #2f3336;
+      border-top: 1px solid #2f3336;
+  }
+
+  #gifThumbnail {
+      width: fit-content;
+  }
+
+  #LinkToGiphy{
+      float: right;
+      position: relative;
+      right: 2px;
+
+  }
