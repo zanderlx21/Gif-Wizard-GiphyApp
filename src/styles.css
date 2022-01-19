@@ -10,6 +10,28 @@ body {
 
   }
 
+  #GifHunterTitle {
+      animation: titleSpin 0.5s calc(1) linear;
+  }
+
+  @keyframes titleSpin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* @keyframes titleSpin {
+    from {
+      transform: translate(0);
+    }
+    to {
+      transform: translate(10%);
+    }
+  } */
+
   a {
       color:#28b39d;
       text-decoration: none;
@@ -43,7 +65,7 @@ body {
       background-color: #1a7567;
   }
 
-  .GifCard {
+  .Result {
       background-color: #16191d;
       border-bottom: 1px solid #2f3336;
       border-top: 1px solid #2f3336;

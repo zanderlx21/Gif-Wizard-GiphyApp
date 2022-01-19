@@ -1,15 +1,18 @@
 export interface GiphyMapResponse { //this is the Promise for the Fetch
-    data: Data[];
+    data: Giphy[];
 }
 
-export interface Data {
+export interface Giphy {
         title: string;
         url: string;
-        images: Image[];
+        id: string;
+        images: Images;
 }
 
-export interface Image {
-    original: {
-        url: string; // this is the link to the GIF
-    }
+export interface Images {
+    original: OriginalImage;
+}
+
+export interface OriginalImage {
+    url: string;
 }

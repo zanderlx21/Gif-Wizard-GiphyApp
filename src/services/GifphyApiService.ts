@@ -1,12 +1,25 @@
 import axios from "axios";
-import { GiphyMapResponse, Image } from "../models/giphy";
+import { Giphy } from "../models/giphy";
 
-export function fetchGiphy(): Promise<GiphyMapResponse> {
-    
-    return axios.get("api.giphy.com/v1/gifs/search", {
-        params: {
-           q: "delorean",
-           api_key: "jFBePHAg2Jot6Gn6Agw7Ag3Kt7F87NLA"
-        }
+export function fetchSearch(searchTerm: string): Promise<Giphy[]> {
+    const apiKey = process.env.REACT_APP_GIPHY_API_KEY;
+  return axios
+    .get("https://api.giphy.com/v1/gifs/search", {
+      params: {
+        q: searchTerm,
+        api_key: apiKey
+      },
     })
-    .then(res => res.data)};
+    .then((res) => res.data.data);
+}
+
+export function fetchTrendingGiphy(): Promise<Giphy[]> {
+    const apiKey = process.env.REACT_APP_GIPHY_API_KEY;
+  return axios
+    .get("https://api.giphy.com/v1/gifs/trending", {
+      params: {
+        api_key: apiKey
+      },
+    })
+    .then((res) => res.data.data);
+}

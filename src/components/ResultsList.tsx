@@ -1,18 +1,19 @@
-import React from "react";
+import { Giphy } from "../models/giphy";
+import { Result } from "./Result";
 
-export function ResultsList() {
+interface Props {
+    gifs: Giphy[];
+}
+
+export function ResultsList({ gifs }: Props) {
+// const [gif, setGif] = useState<Giphy[]>([]);
 
     return(
-        <div>
-            <div className="Results">
-            <h1>Results</h1>
-            <div className="GifCard">
-            <p>This is the title</p>
-            <img src="https://via.placeholder.com/200/09f/fff.png" alt="" id="gifThumbnail" />
-            <br></br>
-            <a href="http://www.giphy.com" id="LinkToGiphy">Link to Giphy</a>
-            </div>
-            </div>
+        <div className="ResultsList">
+            <h2> Results </h2>
+            {gifs.map((gif, i) => ( 
+            <Result key={i} gif={gif}/>
+            ))}
         </div>
     )
-}
+    }
