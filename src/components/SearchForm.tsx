@@ -11,20 +11,20 @@ export function SearchForm({onSubmit}: Props) {
     function onFormSubmit (e: FormEvent) {
         e.preventDefault();
         onSubmit(search);
-        
-
     }
 
     return(
         <div className="SearchForm" onSubmit={onFormSubmit}>
             <form action="" className="InputForm">
             <p>Search for a GIF</p>
+            <div className="searchBarContainer">
             <input 
             type="text" 
             id="searchBar" 
             onChange={(e) => setSearch(e.target.value) } 
             />
             <button id="submitForm" type="submit">Search</button>
+            </div>
             </form>
         </div>
     )
