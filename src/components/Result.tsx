@@ -8,19 +8,11 @@ interface Props {
 }
 
 export function Result({gif}: Props) {
-    // const [gifs, setGifs] = useState<Giphy[]>([])
-
-    // useEffect( () =>{
-    //     fetchTrendingGiphy().then(
-    //         (gifs) => setGifs(gifs)
-    //     );
-    // } , []);
-
+   
     return(
         <div className="Result" key={gif.id}>
             <p>{gif.title}</p>
                 <img src={gif.images.original.url} alt="" id="gifThumbnail" />
-                <br></br>
                 <a href={gif.url} id="LinkToGiphy">Link to Giphy</a>
         </div>
     )

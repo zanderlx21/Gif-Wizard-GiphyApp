@@ -1,8 +1,7 @@
-import React, { useState, useEffect }from "react";
+import { useState, useEffect }from "react";
 import { SearchForm } from "./SearchForm";
 import { ResultsList } from "./ResultsList";
-import { Result } from "./Result";
-import { Giphy, GiphyMapResponse } from "../models/giphy";
+import { Giphy } from "../models/giphy";
 import { fetchSearch, fetchTrendingGiphy } from "../services/GifphyApiService";
 
 export function Main() {
@@ -21,9 +20,9 @@ function handleFormSubmit (search: string) {
 }
 
     return(
-        <div>
+        <main>
         <SearchForm  onSubmit={handleFormSubmit} />
         <ResultsList gifs={gifs} />
-        </div>
+        </main>
     )
 }

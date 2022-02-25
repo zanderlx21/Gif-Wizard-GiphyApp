@@ -3,22 +3,39 @@ body {
     color: #d9d9d9;
   }
 
+
+
 .header {
       display: flex;
       justify-content: space-between;
-      padding: 0px 7px;
+      padding: 0px 7px 0px 12px;
   }
 
-#GifHunterTitle {
-      animation: titleSpin 0.5s calc(1) linear;
+.header p {
+  /* padding-right: 5px; */
+}
+
+#GifsHunterTitle {
+      animation: titleSpin 2s calc(1) ease-in-out;
+      /* padding-left: 12px; */
   }
 
 @keyframes titleSpin {
-    from {
-      transform: rotate(0deg);
+    0% {
+      opacity: 0;
+      transform: translateX(-250px);
     }
-    to {
-      transform: rotate(360deg);
+    50% {
+      color: rgb(255, 255, 255);
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    90% {
+      color: rgb(255, 255, 255);
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+    100% {
+      opacity: 1;
+
     }
   }
 
@@ -37,8 +54,10 @@ a {
 .SearchForm {
       background-color: black;
       border-bottom: 1px solid #2f3336;
-      padding-bottom: 7px;
-      padding-left: 7px;
+      /* padding-bottom: 7px; */
+      /* padding-left: 7px; */
+      padding: 2px 7px 7px 12px;
+
       
   }
 
@@ -47,43 +66,43 @@ a {
       width: 82%;
       border: 3px rgb(0, 0, 184);
       border-style:double;
-      border-radius: 2px;
-      
+      border-radius: 8px;
   }
 
 button {
       color: #fff;
+      display: inline-block;
+      height: 31px;
       background-color: #145a4f;
-      border-radius: 2px;
+      border-radius: 8px;
       border: none;
-      padding: 7px 10px;
+      margin-left: 8px;
+      padding: 7px 15px;
   }
 
 button:hover {
       background-color: #1a7567;
   }
 
-  .submitForm {
-    margin-left: 20px;
-}
 
 .Result {
       background-color: #16191d;
       border-bottom: 1px solid #2f3336;
       border-top: 1px solid #2f3336;
+      display: flex;
+      flex-direction: column;
+      /* height: 100%;
+      width: 100%; */
   }
 #ResultsHeader {
   padding-left: 7px;
   }
 
-#gifThumbnail {
-      width: fit-content;
-  }
 
 #LinkToGiphy{
-      float: right;
-      position: relative;
-      right: 2px;
+      display: block;
+      align-self: flex-end;
+      padding: 2px 5px
 
   }
 
@@ -91,3 +110,14 @@ button:hover {
       display: flex;
       justify-content: space-between;
   } */
+
+  @media screen and (min-width: 760px) {
+    .ResultsList {
+      display: flex;
+      flex-wrap: wrap;
+      height: 50%;
+      /* padding-left: 5px; */
+      /* width: 60%; */
+  }
+
+  }
