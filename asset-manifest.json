@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/Gif-Hunter-GiphyApp/static/css/main.ad3653b1.css",
-    "main.js": "/Gif-Hunter-GiphyApp/static/js/main.1a6d27e3.js",
+    "main.css": "/Gif-Hunter-GiphyApp/static/css/main.3ad5e9a6.css",
+    "main.js": "/Gif-Hunter-GiphyApp/static/js/main.79b20745.js",
     "static/js/787.e968652e.chunk.js": "/Gif-Hunter-GiphyApp/static/js/787.e968652e.chunk.js",
+    "static/media/Magic-Wand.png": "/Gif-Hunter-GiphyApp/static/media/Magic-Wand.be1229487d78f5eece69.png",
     "index.html": "/Gif-Hunter-GiphyApp/index.html",
-    "main.ad3653b1.css.map": "/Gif-Hunter-GiphyApp/static/css/main.ad3653b1.css.map",
-    "main.1a6d27e3.js.map": "/Gif-Hunter-GiphyApp/static/js/main.1a6d27e3.js.map",
+    "main.3ad5e9a6.css.map": "/Gif-Hunter-GiphyApp/static/css/main.3ad5e9a6.css.map",
+    "main.79b20745.js.map": "/Gif-Hunter-GiphyApp/static/js/main.79b20745.js.map",
     "787.e968652e.chunk.js.map": "/Gif-Hunter-GiphyApp/static/js/787.e968652e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad3653b1.css",
-    "static/js/main.1a6d27e3.js"
+    "static/css/main.3ad5e9a6.css",
+    "static/js/main.79b20745.js"
   ]
 }
