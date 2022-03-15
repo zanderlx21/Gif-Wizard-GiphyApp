@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
     background-color: black;
     color: #d9d9d9;
@@ -11,16 +21,26 @@ body {
       padding: 0px 7px 0px 12px;
   }
 
+  .header h1 {
+    font-family: 'Kaushan Script', cursive;
+  }
+
 .header p {
-  /* padding-right: 5px; */
+  font-size: 1em;
+  padding: 10px 20px 0 0;
 }
 
-#GifsHunterTitle {
-      animation: titleSpin 2s calc(1) ease-in-out;
+#App-Title {
+  font-size: 4em;
+  color: rgb(255, 244, 244);
+  margin:0;
+      animation: enter 2s calc(1) ease-in-out;
+      text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(84, 20, 204), 0 0 30px #6902366c, 0 0 40px #ca0568, 0 0 50px #c00663, 0 0 60px #e40976, 0 0 70px #630d38;
+
       /* padding-left: 12px; */
   }
 
-@keyframes titleSpin {
+@keyframes enter {
     0% {
       opacity: 0;
       transform: translateX(-250px);
@@ -29,21 +49,24 @@ body {
       color: rgb(255, 255, 255);
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
     }
-    90% {
+    70% {
       color: rgb(255, 255, 255);
       text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
+    85% {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
     100% {
       opacity: 1;
-
+      text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(84, 20, 204), 0 0 30px #6902366c, 0 0 40px #ca0568, 0 0 50px #c00663, 0 0 60px #e40976, 0 0 70px #630d38;
     }
   }
 
-  /* @keyframes titleSpin {
-    0% {transform: translate(0)}; 
-    50% {transform: translate(10%)};
-    100% {transform: translate(10%)};
-  } */
+  #wand {
+    height: 80px;
+    margin-left: 15px;
+    transform: translateY(7px);
+  }
 
 a {
       color:#28b39d;
@@ -56,15 +79,21 @@ a {
       border-bottom: 1px solid #2f3336;
       /* padding-bottom: 7px; */
       /* padding-left: 7px; */
-      padding: 2px 7px 7px 12px;
+      padding: 2px 7px 18px 18px;
 
       
   }
 
+.SearchForm p {
+  font-size: 1.2em;
+  margin: 0 0 7px 0;
+  padding-left: 3px;
+}
+
 #searchBar {
-      height: 23px;
-      width: 82%;
-      border: 3px rgb(0, 0, 184);
+      height: 40px;
+      width: 75%;
+      /* border: 3px rgb(0, 0, 184); */
       border-style:double;
       border-radius: 8px;
   }
@@ -72,16 +101,21 @@ a {
 button {
       color: #fff;
       display: inline-block;
-      height: 31px;
+      width: 128px;
+      height: 40px;
       background-color: #145a4f;
       border-radius: 8px;
       border: none;
       margin-left: 8px;
       padding: 7px 15px;
+      font-size: 1em;
+      transition: 500ms;
   }
 
 button:hover {
-      background-color: #1a7567;
+      background-color: #e2a92c;
+      transition: 150ms;
+
   }
 
 
@@ -91,18 +125,29 @@ button:hover {
       border-top: 1px solid #2f3336;
       display: flex;
       flex-direction: column;
+      padding: 1.3em;
       /* height: 100%;
       width: 100%; */
   }
+
+  .Result p {
+    font-size: 1.3em;
+    padding-bottom: 7px;
+    color: white;
+  }
 #ResultsHeader {
-  padding-left: 7px;
+  font-size: 2em;
+  padding: 10px 0 10px 20px;
+
   }
 
 
 #LinkToGiphy{
       display: block;
       align-self: flex-end;
-      padding: 2px 5px
+      padding: 2px 5px;
+      font-size: 1.2em;
+      font-style: italic;
 
   }
 
