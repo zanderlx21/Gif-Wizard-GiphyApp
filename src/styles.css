@@ -36,7 +36,7 @@ a {
 }
 
 #App-Title {
-  font-size: 3em;
+  font-size: 2.3em;
   color: rgb(255, 244, 244);
   margin:0;
       animation: enter 2s calc(1) ease-in-out;
@@ -68,7 +68,7 @@ a {
   }
 
   #wand {
-    height: 65px;
+    height: 50px;
     margin-left: 15px;
     animation: wave 1.75s ease-in-out alternate infinite;
   }
@@ -98,7 +98,7 @@ a {
 
 #searchBar {
       height: 40px;
-      width: 75%;
+      width: 69%;
       /* border: 3px rgb(0, 0, 184); */
       border-style:double;
       border-radius: 8px;
@@ -116,6 +116,7 @@ button {
       padding: 7px 15px;
       font-size: 1em;
       transition: 500ms;
+      transform: translateY(1.5px);
   }
 
 button:hover {
@@ -138,7 +139,7 @@ button:hover {
   }
 
 .Result p {
-    font-size: 1.3em;
+    font-size: 1.15em;
     padding: 0 7px 12px 0;
     color: white;
   }
@@ -167,6 +168,13 @@ button:hover {
 }
 
   @media screen and (min-width: 550px) {
+  #App-Title {
+      font-size: 3em;
+  }
+  #wand {
+      height: 65px;
+  }
+
 button {
   width: 120px;
 }
