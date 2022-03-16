@@ -9,11 +9,14 @@ export function ResultsList({ gifs }: Props) {
 // const [gif, setGif] = useState<Giphy[]>([]);
 
     return(
-        <div className="ResultsList">
+        <div className="Results-List-Container">
             <h2 id="ResultsHeader"> Results </h2>
-            {gifs.map((gif, i) => ( 
-            <Result key={i} gif={gif}/>
-            ))}
+            <div className="ResultsList">
+                
+                {gifs.map((gif, i) => ( 
+                <Result key={i} gif={gif}/>
+                ))}
+            </div>
         </div>
     )
     }
