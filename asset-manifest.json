@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Gif-Wizard-GiphyApp/static/css/main.f960ddd9.css",
+    "main.css": "/Gif-Wizard-GiphyApp/static/css/main.bf2e6ea7.css",
     "main.js": "/Gif-Wizard-GiphyApp/static/js/main.b1db3149.js",
     "static/js/787.e968652e.chunk.js": "/Gif-Wizard-GiphyApp/static/js/787.e968652e.chunk.js",
     "static/media/Magic-Wand.png": "/Gif-Wizard-GiphyApp/static/media/Magic-Wand.be1229487d78f5eece69.png",
     "index.html": "/Gif-Wizard-GiphyApp/index.html",
-    "main.f960ddd9.css.map": "/Gif-Wizard-GiphyApp/static/css/main.f960ddd9.css.map",
+    "main.bf2e6ea7.css.map": "/Gif-Wizard-GiphyApp/static/css/main.bf2e6ea7.css.map",
     "main.b1db3149.js.map": "/Gif-Wizard-GiphyApp/static/js/main.b1db3149.js.map",
     "787.e968652e.chunk.js.map": "/Gif-Wizard-GiphyApp/static/js/787.e968652e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f960ddd9.css",
+    "static/css/main.bf2e6ea7.css",
     "static/js/main.b1db3149.js"
   ]
 }
